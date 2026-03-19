@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Projects\sales-simulation\MiroFish\backend\run.py", line 49, in <module>
+    main()
+  File "D:\Projects\sales-simulation\MiroFish\backend\run.py", line 37, in main
+    app = create_app()
+          ^^^^^^^^^^^^
+  File "D:\Projects\sales-simulation\MiroFish\backend\app\__init__.py", line 66, in create_app
+    from .api import graph_bp, simulation_bp, report_bp
+  File "D:\Projects\sales-simulation\MiroFish\backend\app\api\__init__.py", line 13, in <module>
+    from . import report  # noqa: E402, F401
+    ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\sales-simulation\MiroFish\backend\app\api\report.py", line 13, in <module>
+    from ..services.report_agent import ReportAgent, ReportManager, ReportStatus
+  File "D:\Projects\sales-simulation\MiroFish\backend\app\services\report_agent.py", line 24, in <module>
+    from .zep_tools import (
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xa8 in position 0: invalid start byte
